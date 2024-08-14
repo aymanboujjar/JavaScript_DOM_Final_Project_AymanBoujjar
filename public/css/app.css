@@ -12134,5 +12134,82 @@ textarea.form-control-lg {
     width: 90vw;
   }
 }
+.thirdSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  background: #f2f2f2;
+  margin-top: 15vh;
+  padding: 40px;
+}
+.thirdSection .box {
+  width: 29%;
+  background: #ce1212;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.thirdSection .box button {
+  background: none;
+  border: none;
+  color: white;
+  border-radius: 50px;
+  padding-bottom: 5px;
+  width: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.thirdSection .box button i {
+  padding-top: 5px;
+}
+.thirdSection .box button:hover {
+  color: red;
+  background: #fff;
+}
+.thirdSection .box1 {
+  width: 20%;
+  background: #fff;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-inline: 45px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+.thirdSection .box1 i {
+  background: rgba(206, 18, 18, 0.0666666667);
+  border-radius: 50%;
+  padding: 10px;
+  padding-inline: 15px;
+  color: red;
+}
+.thirdSection .box1 i:hover {
+  background: #ce1212;
+  color: white;
+}
+
+@media (max-width: 433px) {
+  .thirdSection {
+    flex-direction: column;
+  }
+  .thirdSection .box {
+    width: 95vw;
+  }
+  .thirdSection .box button {
+    width: fit-content;
+  }
+  .thirdSection .box1 {
+    width: 95vw;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */

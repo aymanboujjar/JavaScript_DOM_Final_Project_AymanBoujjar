@@ -1,0 +1,64 @@
+.thirdSection
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 2vw
+    background: #f2f2f2
+    margin-top: 15vh
+    padding: 40px
+    .box
+        width: 29%
+        background: #ce1212
+        color: #fff
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding: 30px
+
+        button
+            background: none
+            border: none
+            color: white
+            border-radius: 50px
+            padding-bottom: 5px
+            width: 10vw
+            display: flex
+            align-items: center
+            justify-content: center
+            gap: 10px
+            i
+                padding-top: 5px
+            &:hover
+                color: red
+                background: #fff
+    .box1
+        width: 20%
+        background: #fff
+        padding-top: 35px
+        padding-bottom: 35px
+        padding-inline: 45px
+        text-align: center
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 2vh
+        i
+            background: #ce121211
+            border-radius: 50%
+            padding: 10px
+            padding-inline: 15px
+            color: red
+            &:hover
+                background: #ce1212
+                color: white
+@media (max-width: 433px)
+    .thirdSection
+        flex-direction: column
+        .box
+            width: 95vw
+            button
+                width: fit-content
+        .box1
+            width: 95vw
