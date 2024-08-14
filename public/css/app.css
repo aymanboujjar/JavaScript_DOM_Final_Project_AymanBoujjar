@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @font-face {
-  font-family: statis;
-  src: url(../font/Satisfy-Regular.ttf);
+  font-family: Amatic;
+  src: url(../font/AmaticSC-Bold.ttf);
 }
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
@@ -11849,32 +11849,36 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-nav {
+.navbar {
   display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 222222222222222200000000000;
   align-items: center;
   justify-content: center;
   gap: 10vw;
   padding: 20px;
+  padding-inline-start: 5vw;
 }
-nav .open {
+.navbar .open {
   display: none;
 }
-nav .close {
+.navbar .close {
   display: none;
 }
-nav h3, nav .h3 {
+.navbar h3, .navbar .h3 {
   font-weight: bolder;
 }
-nav ul {
+.navbar ul {
   display: flex;
   gap: 50px;
   list-style: none;
 }
-nav ul li {
+.navbar ul li {
   padding-top: 15px;
   position: relative;
 }
-nav ul li::after {
+.navbar ul li::after {
   content: "";
   position: absolute;
   display: block;
@@ -11887,13 +11891,13 @@ nav ul li::after {
   transform-origin: left;
   transition: transform 0.3s ease;
 }
-nav ul li:hover::after {
+.navbar ul li:hover::after {
   transform: scaleX(1);
 }
-nav ul li:hover::after {
+.navbar ul li:hover::after {
   transform: scaleX(1);
 }
-nav ul .li::after {
+.navbar ul .li::after {
   content: "";
   position: absolute;
   display: block;
@@ -11901,7 +11905,7 @@ nav ul .li::after {
   height: 2px;
   background: red;
 }
-nav ul .li1::after {
+.navbar ul .li1::after {
   content: "";
   position: absolute;
   display: block;
@@ -11909,12 +11913,12 @@ nav ul .li1::after {
   height: 2px;
   background: red;
 }
-nav h3::after, nav .h3::after {
+.navbar h3::after, .navbar .h3::after {
   content: ".";
   width: 100%;
   color: red;
 }
-nav button {
+.navbar button {
   background: #d53535;
   color: #fff;
   border: none;
@@ -11924,39 +11928,122 @@ nav button {
 }
 
 @media (max-width: 433px) {
-  nav {
+  .navbar {
     padding-inline: 10px;
     gap: 35vw;
     justify-content: start;
   }
-  nav ul {
+  .navbar ul {
     display: none;
     flex-direction: column;
     gap: 5px;
     position: fixed;
     align-items: start;
-    top: 100px;
-    left: 0.5vw;
-    width: 90%;
+    top: 0px;
+    left: -10px;
+    width: 100%;
     height: fit-content;
     margin-inline-start: 18px;
-    padding-bottom: 100px;
+    z-index: 99999;
+    padding-bottom: 270px;
+    padding-top: 50px;
     align-items: flex-start;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.8823529412);
+    background-color: #fff;
   }
-  nav .close {
+  .navbar .close {
     display: flex;
     position: absolute;
-    right: 15px;
+    right: -20px;
     top: 32px;
   }
-  nav .open {
+  .navbar .open {
     display: none;
     position: absolute;
     right: 50px;
-    z-index: 2;
+    z-index: 10000000000000000000000;
     top: 70px;
+  }
+}
+.firstSection {
+  display: flex;
+  align-items: center;
+  gap: 20vw;
+  padding-inline: 10vw;
+  background: rgb(242, 242, 242);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-top: 13vh;
+}
+.firstSection .leftsec1 {
+  display: flex;
+  flex-direction: column;
+}
+.firstSection .leftsec1 h4, .firstSection .leftsec1 .h4 {
+  padding-inline-end: 6vw;
+  font-family: Amatic;
+  font-size: 60px;
+}
+.firstSection .leftsec1 p {
+  width: 29vw;
+}
+.firstSection .leftsec1 .btns {
+  display: flex;
+  align-items: center;
+}
+.firstSection .leftsec1 .btns .btn {
+  background: #d53535;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  width: fit-content;
+  padding-inline: 25px;
+}
+.firstSection .leftsec1 .btns .btn1 {
+  background: none;
+  border: none;
+  font-size: larger;
+  width: fit-content;
+  padding-inline: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.firstSection .leftsec1 .btns .btn1 i {
+  color: red;
+  font-size: 30px;
+}
+.firstSection .rightsec1 img {
+  width: 35vw;
+  animation: move 3s infinite;
+}
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 433px) {
+  .firstSection {
+    flex-direction: column-reverse;
+  }
+  .firstSection .rightsec1 img {
+    width: 90vw;
+  }
+  .firstSection .leftsec1 h4, .firstSection .leftsec1 .h4 {
+    font-size: 30px;
+    padding-inline-end: 25vw;
+  }
+  .firstSection .leftsec1 p {
+    width: 80vw;
   }
 }
 
