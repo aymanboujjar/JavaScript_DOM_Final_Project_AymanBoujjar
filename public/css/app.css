@@ -11859,6 +11859,8 @@ textarea.form-control-lg {
   gap: 10vw;
   padding: 20px;
   padding-inline-start: 5vw;
+  background: #fff;
+  padding-right: 8vw;
 }
 .navbar .open {
   display: none;
@@ -11929,7 +11931,9 @@ textarea.form-control-lg {
 
 @media (max-width: 433px) {
   .navbar {
+    padding-right: 0px;
     padding-inline: 10px;
+    padding-inline-end: 42px;
     gap: 35vw;
     justify-content: start;
   }
@@ -11954,7 +11958,7 @@ textarea.form-control-lg {
   .navbar .close {
     display: flex;
     position: absolute;
-    right: -20px;
+    right: 10px;
     top: 32px;
   }
   .navbar .open {
@@ -12044,6 +12048,90 @@ textarea.form-control-lg {
   }
   .firstSection .leftsec1 p {
     width: 80vw;
+  }
+}
+.secoundSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-inline: 15vw;
+}
+.secoundSection p {
+  color: rgb(144, 146, 148);
+}
+.secoundSection h4, .secoundSection .h4 {
+  font-family: Amatic;
+  font-size: 60px;
+}
+.secoundSection span {
+  color: red;
+}
+.secoundSection .main {
+  display: flex;
+  gap: 7vw;
+}
+.secoundSection .main .left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.secoundSection .main .left img {
+  width: 52.5vw;
+}
+.secoundSection .main .left .forcontact {
+  border: black, 4px, solid;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.secoundSection .main .left .forcontact span {
+  color: red;
+}
+.secoundSection .main .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.secoundSection .main .right ul {
+  list-style: none;
+}
+.secoundSection .main .right ul i {
+  color: red;
+}
+.secoundSection .main .right .bg {
+  background-image: url(../images/about-2.jpg);
+  padding-top: 124px;
+  padding-bottom: 124px;
+  width: 35vw;
+  display: flex;
+  background-position-y: 50%;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.secoundSection .main .right .bg i {
+  font-size: 100px;
+  color: red;
+}
+
+@media (max-width: 433px) {
+  .secoundSection h4, .secoundSection .h4 {
+    font-size: 38px;
+  }
+  .secoundSection .main {
+    flex-direction: column;
+  }
+  .secoundSection .main .left img {
+    width: 90vw;
+  }
+  .secoundSection .main .right ul {
+    padding-left: 0px;
+  }
+  .secoundSection .main .right .bg {
+    width: 90vw;
   }
 }
 
