@@ -1,0 +1,93 @@
+.sixthSection
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    margin-top: 10vh
+    padding: 50px
+    background: rgb(242, 242, 242)
+    p
+        color: rgb(123, 123, 123)
+    h4
+        font-family: Amatic
+    span
+        color: red
+.carousel-container 
+    width: 50vw
+    height: 70vh
+    position: relative
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+.next
+    display: none
+  
+.carousel 
+    display: flex
+    transition: transform 0.5s ease-in-out
+    width: 100%
+
+
+.slide 
+    min-width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 10px
+   
+
+    div
+        p
+            i
+                color: red
+        i
+            color: rgb(255, 193, 7)
+        border-left: 2px solid red
+        height: 190px
+        padding-inline-start: 30px
+        // width: 54%
+
+
+.slide img 
+    width: 150px
+    height: 150px
+    border-radius: 50%
+
+    width: 150px
+    height: 150px
+    border-radius: 50%
+
+.indicators-grp
+    width: 100%
+    padding: 2vh 0
+    position: absolute
+    bottom: 10%
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 10px
+
+
+.indicator
+    padding: 5px 5px
+    background: rgb(105, 103, 103)
+    border-radius: 50%
+
+.activeIndicator
+    background: red
+@media (max-width: 433px)
+    .slide 
+        flex-direction: column
+        div
+            height: fit-content
+    .indicators-grp
+        bottom: -2%
+    .carousel-container
+        width: 100%
+    .sixthSection
+        h4
+            font-size: 40px
+            text-align: center

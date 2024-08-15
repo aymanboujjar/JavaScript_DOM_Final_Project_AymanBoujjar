@@ -16,7 +16,9 @@ naopen.addEventListener("click",()=>{
 })
 starters.addEventListener("click",()=>{
     let a = document.querySelector(".starters")
-    a.children[1].textContent="STARTERS"
+    setTimeout(() => {
+        a.children[1].textContent="STARTERS"
+    }, 200);
     console.log(a.children[2]);
     a.classList.add("itemj")
     setTimeout(() => {
@@ -56,3 +58,63 @@ lunch.addEventListener("click",()=>{
         a.classList.remove("itemj")
     }, 1000);
 })
+let nextBtns = document.querySelectorAll(".next")
+let containers = document.querySelectorAll(".carousel-container")
+
+
+
+let currentIndex = 0
+const slideImage = (index, myBtn) => {
+
+    let carouselBtnAttribute = myBtn.getAttribute("carouselBtn")
+
+    containers.forEach(container => {
+        if (container.id == carouselBtnAttribute) {
+
+            let slides = container.querySelectorAll(".slide")
+            let camera = container.querySelector(".carousel")
+            let slideWidth = slides[0].clientWidth
+            let indicators = container.querySelectorAll('.indicator')
+            if (index < 0) {
+                index = slides.length - 1
+            } else if (index >= slides.length) {
+                index = 0
+            }
+
+            indicators.forEach(indicator => {
+                indicator.classList.remove('activeIndicator')
+            });
+            indicators[index].classList.add("activeIndicator")
+            camera.style.transform = `translateX(-${slideWidth * index}px)`
+            currentIndex = index
+        }
+    });
+
+
+}
+
+nextBtns.forEach(next => {
+    next.addEventListener("click", (event) => { slideImage(currentIndex + 1, event.target) })
+    setInterval(() => {
+        next.click()
+    }, 3000);
+});
+// 
+
+
+
+
+
+containers.forEach(container => {
+    let slides = container.querySelectorAll(".slide")
+    let indicatorsGrp = document.createElement("div")
+    indicatorsGrp.classList.add("indicators-grp")
+    container.appendChild(indicatorsGrp)
+
+    slides.forEach(slide => {
+        let indicator = document.createElement("div")
+        indicator.classList.add("indicator")
+        indicatorsGrp.appendChild(indicator)
+    });
+    indicatorsGrp.querySelector(".indicator").classList.add('activeIndicator')
+});
