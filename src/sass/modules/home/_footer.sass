@@ -1,0 +1,52 @@
+footer
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    background: #1f1f24
+    color: white
+    padding: 50px
+    span
+        color: red
+    .container
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 8vw
+        .div
+            display: flex
+            // flex-direction: column
+            i
+                color: red
+                width: 40px
+            gap: 10px
+            p
+                width: 12vw
+            .p
+                width: 10vw
+        .follow
+            padding-bottom: 45px
+            i
+                width: 50px
+                border: 1px solid grey
+                color: grey
+                padding-inline: 11px
+                padding-top:10px
+                padding-bottom:10px
+                border-radius: 50%
+                &:hover
+                    color: red
+                    border: 1px solid red
+@media (max-width: 433px)
+    footer
+        padding-left:  5px
+        .container
+            flex-direction: column
+            align-items: flex-start
+            justify-content: start
+            gap: 3vw
+            .div
+                p
+                    width: 50vw
+                .p
+                    width: 50vw
