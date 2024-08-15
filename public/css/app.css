@@ -12471,6 +12471,10 @@ textarea.form-control-lg {
 .eightSection span {
   color: red;
 }
+.eightSection img {
+  width: 27vw;
+  position: relative;
+}
 .eightSection .container {
   display: flex;
   gap: 35px;
@@ -12498,13 +12502,13 @@ textarea.form-control-lg {
   justify-content: center;
   padding: 20px;
 }
+.eightSection .container .cards .text .img {
+  bottom: 100px;
+}
 .eightSection .container .cards .text i {
   padding-inline: 1vw;
   font-size: 15px;
   font-weight: 100;
-}
-.eightSection .container .cards img {
-  width: 27vw;
 }
 
 @media (max-width: 433px) {
@@ -12513,6 +12517,9 @@ textarea.form-control-lg {
   }
   .eightSection .container .cards {
     width: 100%;
+  }
+  .eightSection .container .cards .text .img {
+    width: 99vw;
   }
   .eightSection .container .cards img {
     width: 100%;
@@ -12563,7 +12570,7 @@ textarea.form-control-lg {
   padding-inline-start: 10px;
 }
 .ninthSEction .main .right form button {
-  padding: 20px;
+  padding: 10px;
   padding-inline-start: 10px;
   width: 15vw;
   background: red;
