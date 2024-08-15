@@ -12619,4 +12619,29 @@ textarea.form-control-lg {
   width: 40vw;
 }
 
+@media (max-width: 433px) {
+  iframe {
+    width: 100%;
+  }
+  .eleventhSection .container .up .a {
+    flex-direction: column;
+  }
+  .eleventhSection .container .up .a .class {
+    width: 100%;
+  }
+  .eleventhSection .container .first .down .div {
+    flex-direction: column;
+  }
+  .eleventhSection .container .first .down .div input {
+    width: 90vw;
+  }
+  .eleventhSection .container .first .down input, .eleventhSection .container .first .down textarea {
+    width: 90vw;
+  }
+  .eleventhSection .container .first .down button {
+    width: fit-content;
+    padding-inline: 5vw;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */
