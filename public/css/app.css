@@ -12595,5 +12595,28 @@ textarea.form-control-lg {
     width: 50vw;
   }
 }
+.eleventhSection h4, .eleventhSection .h4 {
+  font-family: Amatic;
+  font-size: 44px;
+}
+.eleventhSection i {
+  width: 50px;
+  height: 50px;
+}
+.eleventhSection .container .first {
+  width: 100%;
+}
+.eleventhSection .container .first .down .div input {
+  width: 40vw;
+}
+.eleventhSection .container .first .down input, .eleventhSection .container .first .down textarea {
+  width: 82vw;
+}
+.eleventhSection .container .first .down button {
+  width: 10vw;
+}
+.eleventhSection .container .up .class {
+  width: 40vw;
+}
 
 /*# sourceMappingURL=app.css.map */
