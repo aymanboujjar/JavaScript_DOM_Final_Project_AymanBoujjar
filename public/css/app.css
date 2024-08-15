@@ -12518,5 +12518,82 @@ textarea.form-control-lg {
     width: 100%;
   }
 }
+.ninthSEction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+}
+.ninthSEction p {
+  color: rgb(123, 123, 123);
+}
+.ninthSEction h4, .ninthSEction .h4 {
+  font-family: Amatic;
+  font-size: 50px;
+}
+.ninthSEction span {
+  color: red;
+}
+.ninthSEction .main {
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+  background: rgb(248, 248, 248);
+  padding-inline: 2vw;
+}
+.ninthSEction .main .left img {
+  width: 30vw;
+  height: 60vh;
+}
+.ninthSEction .main .right form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+}
+.ninthSEction .main .right form input {
+  width: 15vw;
+  padding-inline-start: 10px;
+}
+.ninthSEction .main .right form textarea {
+  width: 46vw;
+  padding-inline-start: 10px;
+}
+.ninthSEction .main .right form button {
+  padding: 20px;
+  padding-inline-start: 10px;
+  width: 15vw;
+  background: red;
+  border: none;
+  color: white;
+}
+
+@media (max-width: 433px) {
+  .ninthSEction .main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .ninthSEction .main .left img {
+    width: 90vw;
+  }
+  .ninthSEction .main .right form {
+    gap: 15px;
+  }
+  .ninthSEction .main .right form input {
+    margin-inline-start: 5vw;
+    margin-top: 15px;
+    width: 90%;
+  }
+  .ninthSEction .main .right form textarea {
+    width: 90%;
+  }
+  .ninthSEction .main .right form button {
+    width: 50vw;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */

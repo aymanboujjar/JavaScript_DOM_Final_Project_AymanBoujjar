@@ -1,0 +1,64 @@
+.ninthSEction
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin-top: 10vh
+    p
+        color:  rgb(123, 123, 123)
+    h4
+        font-family: Amatic
+        font-size: 50px
+    span
+        color: red
+    .main
+        margin-top: 5vh
+        display: flex
+        align-items: center
+        gap: 5vw
+        background: rgb(248, 248, 248)
+        padding-inline: 2vw
+        .left
+            img
+                width: 30vw
+                height: 60vh
+        .right
+            form
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                gap: 5vh
+                input
+                    width: 15vw
+                    padding-inline-start: 10px
+                textarea
+                    width: 46vw
+                    padding-inline-start: 10px
+                button
+                    padding: 20px
+                    padding-inline-start: 10px
+                    width: 15vw
+                    background: red
+                    border: none
+                    color: white
+@media (max-width: 433px)
+    .ninthSEction
+        .main
+            width: 100%
+            display: flex
+            flex-direction: column
+            .left
+                img
+                    width: 90vw
+            .right
+                form
+                    gap: 15px
+                    input
+                        margin-inline-start: 5vw
+                        margin-top: 15px
+                        width: 90%
+                    textarea
+                        width: 90%
+                    button
+                        width: 50vw
