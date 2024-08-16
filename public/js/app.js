@@ -156,3 +156,87 @@ btn2.addEventListener("click",()=>{
     })
 })
 
+
+
+const carousel4 = document.querySelector('.carousel4');
+const items4 = document.querySelectorAll('.carousel-item4');
+
+let currentIndex4 = 0;
+let isTransitioning4 = false;
+const totalItems4 = items4.length;
+
+items4.forEach(item => {
+    const clone = item.cloneNode(true);
+    carousel4.appendChild(clone);
+});
+
+function updateCarousel4() {
+    carousel4.style.transition = 'transform 0.5s ease-in-out';
+    carousel4.style.transform = `translateX(-${currentIndex4 * (100 / 3)}%)`;
+}
+
+function nextSlide4() {
+    if (isTransitioning4) return;
+    isTransitioning4 = true;
+
+    currentIndex4++;
+    updateCarousel4();
+
+    if (currentIndex4 === totalItems4) {
+        setTimeout(() => {
+            carousel4.style.transition = 'none';
+            currentIndex4 = 0;
+            carousel4.style.transform = `translateX(0)`;
+            isTransitioning4 = false;
+        }, 500);
+    } else {
+        setTimeout(() => {
+            isTransitioning4 = false;
+        }, 500);
+    }
+}
+
+setInterval(nextSlide4, 3000);
+
+
+const carousel5 = document.querySelector('.carousel5');
+const items5 = document.querySelectorAll('.carousel-item5');
+
+let currentIndex5 = 0;
+let isTransitioning5 = false;
+const totalItems5 = items5.length;
+const visibleItems5 = 5; 
+const itemWidthPercentage5 = 100 / visibleItems5;
+
+items5.forEach(item => {
+    const clone = item.cloneNode(true);
+    carousel5.appendChild(clone);
+});
+
+function updateCarousel5() {
+    carousel5.style.transition = 'transform 0.5s ease-in-out';
+    carousel5.style.transform = `translateX(-${currentIndex5 * itemWidthPercentage5}%)`;
+}
+
+function nextSlide5() {
+    if (isTransitioning5) return;
+    isTransitioning5 = true;
+
+    currentIndex5++;
+    updateCarousel5();
+
+    if (currentIndex5 === totalItems5) {
+        setTimeout(() => {
+            carousel5.style.transition = 'none';
+            currentIndex5 = 0;
+            carousel5.style.transform = `translateX(0)`;
+            isTransitioning5 = false;
+        }, 500);
+    } else {
+        setTimeout(() => {
+            isTransitioning5 = false;
+        }, 500);
+    }
+}
+
+setInterval(nextSlide5, 3000);
