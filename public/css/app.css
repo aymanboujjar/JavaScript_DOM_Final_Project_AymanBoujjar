@@ -11929,6 +11929,63 @@ textarea.form-control-lg {
   padding-inline: 25px;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal img {
+  display: none;
+}
+
+.modal-content {
+  margin: 90px auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 400px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+form button {
+  padding: 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+form button:hover {
+  background-color: #e23333;
+}
+
 @media (max-width: 433px) {
   .navbar {
     padding-right: 0px;
@@ -12033,6 +12090,41 @@ textarea.form-control-lg {
   100% {
     transform: translateY(0);
   }
+}
+
+.modal1 {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+}
+.modal1 img {
+  display: none;
+}
+
+.modal-content1 {
+  padding-inline-start: 16vw;
+  border: 1px solid #888;
+  border-radius: 15px;
+  position: relative;
+}
+.modal-content1 video {
+  padding-bottom: 5vh;
+}
+
+.close1 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.close1:hover, .close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @media (max-width: 433px) {
@@ -12521,6 +12613,9 @@ textarea.form-control-lg {
   .eightSection .container .cards .text .img {
     width: 99vw;
   }
+  .eightSection .container .cards .text i {
+    padding-inline: 5vw;
+  }
   .eightSection .container .cards img {
     width: 100%;
   }
@@ -12702,6 +12797,7 @@ footer .container .follow i:hover {
 @media (max-width: 433px) {
   footer {
     padding-left: 5px;
+    width: 90vw;
   }
   footer .container {
     flex-direction: column;

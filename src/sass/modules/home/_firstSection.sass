@@ -6,7 +6,9 @@
     background: rgb(242, 242, 242)
     padding-top:  60px
     padding-bottom:  60px
-    margin-top: 13vh 
+    margin-top: 13vh
+
+
     .leftsec1
         display: flex
         flex-direction: column
@@ -55,6 +57,37 @@
                 
                 100% 
                     transform: translateY(0)
+.modal1
+    display: none 
+    position: fixed 
+    background-color: rgba(0,0,0,0.7)
+    left: 0
+    img
+        display: none
+
+.modal-content1
+    // margin: 90px auto
+    
+    padding-inline-start: 16vw
+    video
+        padding-bottom: 5vh
+    border: 1px solid #888
+    // max-width: 400px
+    border-radius: 15px
+    position: relative
+.close1
+    color: #aaa
+    float: right
+    font-size: 28px
+    font-weight: bold
+    position: absolute
+    top: 5px
+    right: 10px
+    &:hover,
+    &:focus
+        color: #000
+        text-decoration: none
+        cursor: pointer
 @media (max-width: 433px)
     .firstSection
         flex-direction: column-reverse 

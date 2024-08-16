@@ -14,6 +14,7 @@ naopen.addEventListener("click",()=>{
         nav.children[2].style.display="none"
     })
 })
+
 starters.addEventListener("click",()=>{
     let a = document.querySelector(".starters")
     setTimeout(() => {
@@ -58,6 +59,11 @@ lunch.addEventListener("click",()=>{
         a.classList.remove("itemj")
     }, 1000);
 })
+
+
+
+
+
 let nextBtns = document.querySelectorAll(".next")
 let containers = document.querySelectorAll(".carousel-container")
 
@@ -94,6 +100,7 @@ const slideImage = (index, myBtn) => {
 }
 
 nextBtns.forEach(next => {
+    
     next.addEventListener("click", (event) => { slideImage(currentIndex + 1, event.target) })
     setInterval(() => {
         next.click()
@@ -106,15 +113,46 @@ nextBtns.forEach(next => {
 
 
 containers.forEach(container => {
+    
     let slides = container.querySelectorAll(".slide")
     let indicatorsGrp = document.createElement("div")
     indicatorsGrp.classList.add("indicators-grp")
     container.appendChild(indicatorsGrp)
-
+    
     slides.forEach(slide => {
         let indicator = document.createElement("div")
         indicator.classList.add("indicator")
         indicatorsGrp.appendChild(indicator)
     });
-    indicatorsGrp.querySelector(".indicator").classList.add('activeIndicator')
+    
+    // indicatorsGrp.querySelector(".indicator").classList.add('activeIndicator')
 });
+
+let modal = document.getElementById("loginModal");
+let btn = document.querySelector(".btn2");
+
+btn.addEventListener("click",()=>{
+    modal.style.display = "block";
+    modal.addEventListener("click",()=>{
+        modal.style.display = "none";
+    })
+})
+let modal1 = document.getElementById("loginModal2");
+let btn1 = document.querySelector(".btn1");
+
+btn1.addEventListener("click",()=>{
+    modal1.style.display = "block";
+    modal1.addEventListener("click",()=>{
+        modal1.style.display = "none";
+    })
+})
+let modal2 = document.getElementById("loginModal2");
+let btn2 = document.querySelector(".bg");
+
+btn2.addEventListener("click",()=>{
+    modal2.style.display = "block";
+    modal2.addEventListener("click",()=>{
+        modal2.style.display = "none";
+    })
+})
+
